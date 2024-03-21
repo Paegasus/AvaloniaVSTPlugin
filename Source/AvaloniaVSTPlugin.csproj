@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0-windows</TargetFrameworks>
+    <Version>0.0.1</Version>
+    <Authors>Lahcene Belbachir</Authors>
+    <Company>Lahcene Belbachir</Company>
+    <Product>Avalonia VST Plugin</Product>
+    <Platforms>x64;x86</Platforms>
+    <Description>A sample that demonstrates the integration of Avalonia UI into a VST.NET plugin.</Description>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Reference all of Windows Forms -->
+    <FrameworkReference Include="Microsoft.WindowsDesktop.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="VST.NET2-Plugin" Version="2.1.1" />
+  </ItemGroup>
+</Project>
